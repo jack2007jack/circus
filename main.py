@@ -24,3 +24,38 @@
 # Github Fork (repozitorija kopija) - https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
 # Klonēt repozitoriju - hhttps://code.visualstudio.com/docs/sourcecontrol/intro-to-git
 
+from random import randint
+
+lauciņa2 = 1
+
+lauciņa1 = 1
+
+while True: 
+
+    if lauciņa1 >= 100:
+        print(f"spelētājs 1 won with: {lauciņa1}")
+        break
+    elif int(lauciņa2) >= 100:
+        print(f"spelētājs 2 won with: {lauciņa2}")
+        break
+    kauliņu1 = [randint(1, 6) for i in range(1)]
+    
+    lauciņa1 += sum(kauliņu1)
+    
+    print('spelētājs 1',kauliņu1, lauciņa1)
+    
+    kauliņu2 = [randint(1, 6) for i in range(1)]
+    
+    lauciņa2 += sum(kauliņu2)
+    
+    print('spelētājs 2',kauliņu2, lauciņa2) 
+ 
+    if lauciņa1 == 18:
+        lauciņa1=lauciņa1 - 11 and print("zilas kāpnes18.1")
+    if lauciņa2 == 18:
+        lauciņa2=lauciņa2 - 11 and print("zilas kāpnes18.2")
+
+    if lauciņa1 == 67:
+        lauciņa1=lauciņa1 - 21 and print("zilas kāpnes67.1")
+    if lauciņa2 == 67:
+        lauciņa2=lauciņa2 - 21 and print("zilas kāpnes67.2")
